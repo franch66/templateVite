@@ -1,0 +1,77 @@
+/* Contenedor principal */
+.user-opts-container {
+    margin-top: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Pestañas principales */
+  .main-tabs {
+    display: flex;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 0 15px;
+  }
+  
+  .main-tab {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #666;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .main-tab:hover {
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  .main-tab.active {
+    color: #2196F3;
+    border-bottom: 3px solid #2196F3;
+    font-weight: 500;
+  }
+  
+  /* Submenú */
+  .submenu-container {
+    padding: 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .submenu-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .submenu-btn:hover {
+    background: #2196F3;
+    color: white;
+    border-color: #2196F3;
+  }
+  
+  .submenu-btn.active {
+    background: #2196F3;
+    color: white;
+    border-color: #2196F3;
+  }
+  
+  /* Contenedor de contenido */
+  .content-container {
+    padding: 20px;
+    min-height: 300px;
+    background: #fff;
+  }

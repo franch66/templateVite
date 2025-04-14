@@ -1,0 +1,107 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #282c34;
+  color: white;
+}
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .App-logo {
+    height: 50px;
+    pointer-events: none;
+  }
+  
+  .login-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .login-form input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #61dafb;
+  }
+  
+  .login-form button {
+    padding: 0.5rem 1rem;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #282c34;
+    font-weight: bold;
+  }
+  
+  .login-form button:hover {
+    background-color: #4fa8d3;
+  }
+
+/* Language Switcher Modal */
+.language-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #282c34;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 300px;
+  color: white;
+}
+
+.modal-content h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.modal-content button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #282c34;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: #4fa8d3;
+}
+
+.language-switcher {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.language-switcher > button {
+  background: none;
+  border: 1px solid #61dafb;
+  color: #61dafb;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+

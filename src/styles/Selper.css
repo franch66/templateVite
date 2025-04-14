@@ -1,0 +1,43 @@
+.selper-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    padding: 20px;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+  
+  .profile-data {
+    margin-top: 20px;
+  }
+  
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .data-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .data-value {
+    color: #666;
+  }

@@ -1,0 +1,81 @@
+/* components/Sidebar.css */
+.sidebar {
+  width: 250px;
+  background-color: #282c34;
+  color: white;
+  height: calc(100vh - 60px); /* Ajusta según el header */
+  padding: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu li:hover {
+  background-color: #34495e;
+}
+
+.menu li:active {
+  background-color: #2980b9;
+}
+
+.lock-icon {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.menu li[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Sidebar.css - Modificaciones para el submenu vertical */
+.parent-menu {
+position: relative;
+}
+
+.parent-menu .arrow {
+margin-left: auto;
+padding-left: 10px;
+font-size: 0.8em;
+transition: transform 0.2s;
+}
+
+.parent-menu.expanded .arrow {
+transform: rotate(90deg);
+}
+
+.submenu {
+list-style: none;
+padding: 0;
+margin: 0;
+position: absolute;
+left: 0;
+top: 100%;
+width: 100%;
+background-color: #282c34;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+z-index: 100;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-out;
+}
+
+.parent-menu.expanded .submenu {
+max-height: 200px; /* Ajusta según necesidad */
+}
+
