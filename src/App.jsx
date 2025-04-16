@@ -1,7 +1,6 @@
 //https://es.react.dev/learn
 //Modicacion Dagr
 //Segunda modificacion
-//Tercera modificacion
 
 import { useState } from 'react';
 import './App.css';
